@@ -11,6 +11,14 @@ def print_combinations(str_input):
             print(''.join(j))
 
 
+def print_combinations_with_replacement(str_input):
+    # input in format "HACK 2"
+    from itertools import combinations_with_replacement
+    s, n = str_input.split()
+    for i in combinations_with_replacement(sorted(s), int(n)):
+        print(''.join(i))
+
+
 if __name__ == '__main__':
     number = int(input())
     for x in range(1, number+1):

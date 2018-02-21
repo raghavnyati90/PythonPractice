@@ -1,4 +1,5 @@
 def print_xxx(n):
+    #input is number
     return print(*range(1, n+1), sep='')
 
 
